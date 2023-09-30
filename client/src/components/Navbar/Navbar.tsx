@@ -12,7 +12,9 @@ function Navbar() {
       <div className="navbar__logo">
         <img className="logo" src="../../public/chillyPineapplesLogo.avif"/>
       </div>
-      <p className="navbar__name">The Chilly Pineapples</p>
+      <div>
+        <p className="navbar__name">The Chilly Pineapples</p>
+      </div>
       <div className="navbar__account">
         {loggedIn() === false ? (
           <>
