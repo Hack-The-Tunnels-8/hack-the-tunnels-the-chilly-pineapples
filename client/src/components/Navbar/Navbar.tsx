@@ -10,13 +10,14 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <Link to="/">Store Logo</Link>
+        <img className="logo" src="../../public/chillyPineapplesLogo.avif"/>
       </div>
+      <p className="navbar__name">The Chilly Pineapples</p>
       <div className="navbar__account">
         {loggedIn() === false ? (
           <>
-            <button onClick={() => navigate("/sign-up")}>Sign Up</button>
-            <button onClick={() => navigate("/login")}>Login</button>
+            <button className="button" onClick={() => navigate("/sign-up")}>Sign Up</button>
+            <button className="button" onClick={() => navigate("/login")}>Login</button>
           </>
         ) : (
           <button onClick={() => logout()}>Logout</button>
