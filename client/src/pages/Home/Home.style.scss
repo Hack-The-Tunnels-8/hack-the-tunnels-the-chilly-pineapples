@@ -1,25 +1,4 @@
-@media only screen and (max-width: 900px) {
-  .home-page {
-    &__title {
-      color: rgb(0, 0, 0);
-      font-size: 7rem;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    &__products {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 2%;
-  
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    
-    
-    }
-  }
-}
+
 
 .home-page {
   &__title {
@@ -52,4 +31,50 @@
   to {background-color: blue;}
 }
 
+}
+
+@media all and (max-width:1000px) {
+  .home-page {
+    &__title {
+      color: rgb(0, 0, 0);
+      font-size: 7rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    &__products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2%;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    
+    
+    }
+  }
+}
+
+@media all and (max-width:700px) {
+  .home-page {
+    &__title {
+      color: rgb(0, 0, 0);
+      font-size: 7rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    &__products {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2%;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    
+    
+    }
+  }
 }
