@@ -1,14 +1,22 @@
 .product-preview-card {
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
   &__title {
     font-style: bold;
-    color: green;
+    font-size: 2rem;
+    color: rgb(45, 45, 45);
+    margin: 0;
   }
 
   &__description {
-    color: blue;
+    padding-left: 0.3%;
+    color: rgb(86, 86, 86);
   }
 
   &__image {
-    width: 10rem;
+    height: 25rem;
+    border-radius: 1rem;
+    object-fit: cover;
   }
 }
