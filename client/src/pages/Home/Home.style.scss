@@ -1,27 +1,29 @@
+
+
 .home-page {
-  padding-left: 3%;
   &__title {
     color: rgb(0, 0, 0);
     font-size: 7rem;
     font-family: Arial, Helvetica, sans-serif;
   }
-
+  
   &__products {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
 
     a {
       text-decoration: none;
       color: inherit;
     }
+  
+  
   }
 
 .home-page__title{
   animation-duration: 4s;
   animation-name: example;
-  color: red;
+  color: rgb(0, 0, 0);
 }
 
 @keyframes example {
@@ -29,4 +31,50 @@
   to {background-color: blue;}
 }
 
+}
+
+@media all and (max-width:1000px) {
+  .home-page {
+    &__title {
+      color: rgb(0, 0, 0);
+      font-size: 7rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    &__products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2%;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    
+    
+    }
+  }
+}
+
+@media all and (max-width:700px) {
+  .home-page {
+    &__title {
+      color: rgb(0, 0, 0);
+      font-size: 7rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    &__products {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2%;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    
+    
+    }
+  }
 }
