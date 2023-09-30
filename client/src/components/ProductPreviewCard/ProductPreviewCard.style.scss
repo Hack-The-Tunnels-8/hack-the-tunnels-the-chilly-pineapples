@@ -4,11 +4,13 @@
   border-radius: 1rem;
   &__title {
     font-style: bold;
+    font-size: 2rem;
     color: rgb(45, 45, 45);
     margin: 0;
   }
 
   &__description {
+    padding-left: 0.3%;
     color: rgb(86, 86, 86);
   }
 
