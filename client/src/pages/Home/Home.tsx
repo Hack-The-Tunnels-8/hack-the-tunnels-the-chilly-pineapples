@@ -22,6 +22,7 @@ function Home() {
         <p>Hello World</p>
         <h1 className="home-page__title">Home</h1>
         <h2>Products:</h2>
+
         <div className="home-page__products">
           {products.map((product) => (
             <Link to={`/products/${product.id}`} key={`${product.id}`}>
@@ -36,6 +37,8 @@ function Home() {
           ))}
         </div>
       </div>
+
+      
     </Page>
   );
 }
