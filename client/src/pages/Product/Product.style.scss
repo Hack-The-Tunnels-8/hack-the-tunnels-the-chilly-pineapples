@@ -1,10 +1,32 @@
 .product{
-    border: 5;
+    border-radius: 1rem;
+    height: 25rem;
+    
+}
+
+.product img{
+    border-radius: 1rem;
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 .text{
     font-family: sans-serif;
-    inline-size: 150px;
+    font-size: 1rem;
     overflow-wrap: break-word;
 }
 
+.product-page {
+    padding-top: 10%;
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2%;
+}
+
+@media all and (max-width:1050px) {
+    .product-page {
+    grid-template-columns: 1fr;
+    }
+}

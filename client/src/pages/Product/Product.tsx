@@ -30,23 +30,14 @@ function Product() {
         {message && <p>{message}</p>}
         {product && (
           <>
-            <table >
-              <tr>
-                <td  className = "product">
-                   <img src="/public/book.jpg" alt="pineapple" height="500px" width="500px"/>
-                </td>
-
-                <td>
+                <div  className = "product">
+                   <img src="/public/book.jpg" alt="pineapple"/>
+                </div>
                   <div className="text">
                   <h3>Title: pineapple </h3>
                   <p>Cost: $20{}</p>
                   <p>Description: yellow, {product.description}</p>
                   </div>
-                </td>
-              </tr>
-
-              
-            </table>
 
             
 
