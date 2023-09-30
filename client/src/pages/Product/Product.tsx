@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Page } from "../../components";
 import { ServiceAPI } from "../../infrastructure";
 import "./Product.style.scss";
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
 
 function Product() {
   const { id } = useParams();
