@@ -1,12 +1,16 @@
 .home-page {
+  padding-left: 3%;
   &__title {
-    color: red;
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    font-size: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   &__products {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2%;
 
     a {
       text-decoration: none;
