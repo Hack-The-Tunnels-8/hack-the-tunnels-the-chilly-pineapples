@@ -1,5 +1,37 @@
 .navbar {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  text-align: center;
+  background-color: #01000A;
+  color: #f6f6f6;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
 }
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar__name {
+  vertical-align: middle;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.button {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.8rem;
+}
+
