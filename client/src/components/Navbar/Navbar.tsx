@@ -9,9 +9,9 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="navbar__logo">
+      <button className="navbar__logo" onClick={() => navigate("/")}>
         <img className="logo" src="../../public/chillyPineapplesLogo.avif"/>
-      </div>
+      </button>
       <div>
         <p className="navbar__name">The Chilly Pineapples</p>
       </div>
